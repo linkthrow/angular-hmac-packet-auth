@@ -1,35 +1,34 @@
 {
-  "name": "angular-plyr",
+  "name": "angular-hmac-packet-auth",
   "version": "1.0.1",
-  "description": "Angular wrapper for Plyr",
+  "description": "Angular HMAC Packet Authetication",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "main": "index.js",
+  "main": "dist/linkthrow-hmac-packet-auth.min.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/linkthrow/angular-plyr.git"
+    "url": "git+https://github.com/linkthrow/angular-hmac-packet-auth.git"
   },
   "keywords": [
     "angular",
     "angularjs",
-    "plyr",
-    "linkthrow"
+    "hmac",
+    "linkthrow",
+    "packet",
+    "sha512",
+    "auth"
   ],
   "author": "Hussan Choudhry <hussan@uselinkthrow.com>",
   "license": "MIT",
-  "homepage": "https://github.com/linkthrow/angular-plyr/",
+  "homepage": "https://github.com/linkthrow/angular-hmac-packet-auth/",
   "devDependencies": {
     "angular": "^1.4.9",
     "angular-mocks": "^1.4.9",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.1.1",
-    "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.1",
-    "gulp-util": "^3.0.7",
-    "gulp-clean-css": "^2.0.6",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.21",
     "karma-firefox-launcher": "^0.1.7",
