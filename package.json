@@ -1,0 +1,41 @@
+{
+  "name": "angular-plyr",
+  "version": "1.0.1",
+  "description": "Angular wrapper for Plyr",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linkthrow/angular-plyr.git"
+  },
+  "keywords": [
+    "angular",
+    "angularjs",
+    "plyr",
+    "linkthrow"
+  ],
+  "author": "Hussan Choudhry <hussan@uselinkthrow.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/linkthrow/angular-plyr/",
+  "devDependencies": {
+    "angular": "^1.4.9",
+    "angular-mocks": "^1.4.9",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7",
+    "gulp-clean-css": "^2.0.6",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.21",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.7"
+  },
+  "engines": {
+    "node": "4.3.0"
+  }
+}

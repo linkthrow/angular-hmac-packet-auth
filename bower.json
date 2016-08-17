@@ -1,0 +1,39 @@
+{
+  "author": {
+    "name": "Hussan Choudhry",
+    "email": "hussan@uselinkthrow.com"
+  },
+  "name": "angular-plyr",
+  "description": "Angular wrapper for Plyr",
+  "version": "1.0.2",
+  "license": "MIT",
+  "main": [
+      "dist/angular-plyr.min.js",
+      "dist/angular-plyr.min.css"
+  ],
+  "homepage": "https://github.com/linkthrow/angular-plyr",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/linkthrow/angular-plyr.git"
+  },
+  "ignore": [
+    ".editorconfig",
+    ".gitattributes",
+    ".gitignore",
+    ".gittrack",
+    ".jshintrc",
+    "demo/",
+    "Gruntfile.js",
+    "karma-unit.conf.js",
+    "package.json",
+    "src/",
+    "template/",
+    "test/"
+  ],
+  "dependencies": {
+    "angular": "^1.2.10",
+    "angular-mocks": "^1.2.10"
+  },
+  "devDependencies": {
+  }
+}
