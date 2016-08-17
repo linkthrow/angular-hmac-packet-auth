@@ -1,13 +1,9 @@
 (function() {
     'use strict';
+    angular.module('linkthrow.hmacPacketAuth', []);
 
-    angular
-        .module('linkthrow.hmacPacketAuth')
-        .factory('AddAccessTokenHeaderInterceptor', AddAccessTokenHeaderInterceptor);
-
-    /** @ngInject */
-    function AddAccessTokenHeaderInterceptor(localStorageService) {
-        return {
+    angular.module('linkthrow.hmacPacketAuth').factory('AddAccessTokenHeaderInterceptor', ['localStorageService', function(localStorageService) {  
+        var requestInterceptor = {
             request: function(config) {
                 var accessToken = localStorageService.get('token');
                 if (accessToken) {
@@ -44,7 +40,14 @@
                 return config;
             }
         };
-    }
+
+        return requestInterceptor;
+    }]);
+
+
+    angular.module('linkthrow.hmacPacketAuth').config(['$httpProvider', function($httpProvider) {
+        $httpProvider.interceptors.push('AddAccessTokenHeaderInterceptor');
+    }]);
 
     function isUndefinedOrNull(val) {
         return angular.isUndefined(val) || val === null
